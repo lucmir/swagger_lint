@@ -76,7 +76,7 @@
         }
       }
     },
-    "/pets/{petId}": {
+    "/myPets/{petId}": {
       "get": {
         "summary": "Info for a specific pet",
         "operationId": "showPetById",
