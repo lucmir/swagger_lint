@@ -6,9 +6,6 @@ module SwaggerLint
       @swagger = swagger
     end
 
-    def check_definitions()
-    end
-
     def check_paths()
       warns = []
       paths = @swagger["paths"]
@@ -22,7 +19,7 @@ module SwaggerLint
 
       def check_path_name(path_name)
         warns = []
-        warns.push("Path must start with slash: #{path_name}") \
+        warns.push("[ #{path_name} ] Path must start with slash") \
           unless path_name[0] == "/"
         return warns
       end

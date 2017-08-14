@@ -7,7 +7,7 @@ describe SwaggerLint::Linter do
       linter = described_class.new(swagger)
       warns = linter.check_paths
       expect(warns.size).to eq(1)
-      expect(warns[0]).to eq("Path must start with slash: pets")
+      expect(warns[0]).to eq("[ pets ] Path must start with slash")
     end
   end
 end
