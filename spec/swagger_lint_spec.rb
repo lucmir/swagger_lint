@@ -1,1 +1,1 @@
-require "./lib/swagger_lint.rb"
+require './lib/swagger_lint.rb'

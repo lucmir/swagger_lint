@@ -5,8 +5,6 @@ module SwaggerLint
       @swagger = swagger
     end
 
-    def is_collection(path)
-
-    end
+    def collection?(path) end
   end
 end

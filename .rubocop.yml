@@ -1,0 +1,23 @@
+AllCops:
+  TargetRubyVersion: '2.4.0'
+  Exclude:
+    - Rakefile
+    - Gemfile
+
+Style/Documentation:
+  Enabled: false
+
+ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+
+ClassLength:
+  Max: 120
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
