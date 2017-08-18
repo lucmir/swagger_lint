@@ -4,9 +4,8 @@ require 'swagger_lint/version'
 module SwaggerLint
   class SwaggerLinter
     def validate(json)
-      warns = []
       @linter = SwaggerLint::Linter.new(json)
-      warns += @linter.check_paths
+      warns = @linter.check_all
 
       puts "Warnings: #{warns.size}"
       warns.each { |warn| puts warn }

@@ -6,6 +6,10 @@ module SwaggerLint
       @swagger = swagger
     end
 
+    def check_all()
+      check_paths
+    end
+
     def check_paths()
       warns = []
       paths = @swagger["paths"]
@@ -21,7 +25,7 @@ module SwaggerLint
         warns = []
         prefix = "[ #{path_name} ]"
         warns.push("#{prefix} Path must start with slash") unless path_name[0] == "/"
-        path_without_ids = path_name.sub /{.*}/, ''
+        path_without_ids = path_name.sub(/{.*}/, '')
         warns.push("#{prefix} Avoid upper case letters") if /[[:upper:]]/.match(path_without_ids)
         return warns
       end
