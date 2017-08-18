@@ -1,5 +1,6 @@
 require 'swagger_lint/linter'
 require 'swagger_lint/version'
+require 'config_loader'
 
 module SwaggerLint
   class SwaggerLinter

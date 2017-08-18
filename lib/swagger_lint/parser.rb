@@ -5,6 +5,8 @@ module SwaggerLint
       @swagger = swagger
     end
 
-    def collection?(path) end
+    def collection?(path)
+
+    end
   end
 end
