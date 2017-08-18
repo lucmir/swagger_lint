@@ -3,7 +3,7 @@
 require 'yaml'
 
 class ConfigLoader
-  def initialize(config_file_path='config/config.yml')
+  def initialize(config_file_path = 'config/config.yml')
     load_config_data(config_file_path)
   end
 
@@ -24,6 +24,6 @@ class ConfigLoader
       $stderr.puts 'Can not load config file'
       raise
     end
-    @config_data = YAML.load(configs)
+    @config_data = YAML.safe_load(configs)
   end
 end

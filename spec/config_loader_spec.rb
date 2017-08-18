@@ -16,7 +16,7 @@ describe ConfigLoader do
     it 'should load configuration' do
       config_loader = ConfigLoader.new(config_test_path)
       configs = config_loader.config_for('CONFIGS')
-      expect(configs).to include("TEST")
+      expect(configs).to include('TEST')
     end
   end
 end

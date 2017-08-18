@@ -1,7 +1,7 @@
 example_id                                | status | run_time        |
 ----------------------------------------- | ------ | --------------- |
-./spec/config_loader_spec.rb[1:1:1]       | passed | 0.00163 seconds |
-./spec/config_loader_spec.rb[1:1:2]       | passed | 0.00281 seconds |
-./spec/config_loader_spec.rb[1:2:1]       | passed | 0.00151 seconds |
-./spec/swagger_lint/linter_spec.rb[1:1:1] | passed | 0.00072 seconds |
-./spec/swagger_lint/linter_spec.rb[1:1:2] | passed | 0.00014 seconds |
+./spec/config_loader_spec.rb[1:1:1]       | passed | 0.0012 seconds  |
+./spec/config_loader_spec.rb[1:1:2]       | passed | 0.00128 seconds |
+./spec/config_loader_spec.rb[1:2:1]       | passed | 0.0011 seconds  |
+./spec/swagger_lint/linter_spec.rb[1:1:1] | passed | 0.0005 seconds  |
+./spec/swagger_lint/linter_spec.rb[1:1:2] | passed | 0.00015 seconds |
